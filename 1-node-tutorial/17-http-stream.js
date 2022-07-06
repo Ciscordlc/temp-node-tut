@@ -4,7 +4,7 @@ var http = require('http');
 var fs  = require('fs');
 const { Http2ServerRequest } = require('http2');
 
-// Inefficient by potentially sending too large of files over to users
+// Inefficient by potentially sending too large of files over to users in a single instance
 // http.createServer(function (req, res) {
 //     const text = fs.readFileSync('./content/big.txt', 'utf8');
 //     res.end(text);
